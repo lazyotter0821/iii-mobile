@@ -98,7 +98,7 @@
             display: block;
             width: 100%;
             padding: 16px;
-            background: #667eea;
+            background: #ff6b35;
             color: white;
             border: none;
             border-radius: 8px;
@@ -109,7 +109,7 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .btn:active {
-            background: #5a6fd8;
+            background: #e55a2b;
             transform: translateY(1px);
         }
         #result {
@@ -963,6 +963,9 @@
             addSpecialDeductionListeners();
             initCharts();
             calculate();
+            
+            // 添加计算按钮点击事件监听器
+            document.getElementById('calculate').addEventListener('click', calculate);
         };
     </script>
 </body>
